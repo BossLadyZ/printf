@@ -6,6 +6,7 @@
  * Return: The amount of characters printed
  */
 int print_reversed(va_list arg)
+
 {
 	int len;
 	char *str;
@@ -52,5 +53,6 @@ int rot13(va_list list)
 		if (x == 53)
 			_write_char(str[i]);
 	}
+	
 	return (i);
 }

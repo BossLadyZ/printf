@@ -12,14 +12,16 @@ int printf_int(va_list args)
 
 	n = n / 10;
 	num = n;
+
 	if (last < 0)
-		{
+	{
 		_putchar('-');
 		num = -num;
 		n = -n;
 		last = -last;
 		i++;
-		}
+	}
+	
 	if (num > 0)
 	{
 		while (num / 10 != 0)

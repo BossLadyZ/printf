@@ -49,6 +49,6 @@ int parser(const char *format, conver_t f_list[], va_list arg_list)
 			printed_chars++;
 		}
 	}
+	
 	return (printed_chars);
-
 }
