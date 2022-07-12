@@ -7,11 +7,12 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include <limits.h>
-typedef struct print
+typedef struct printHandler
 {
-	char *t;
-	int (*f)(va_list);
-} print_t;
+	char c;
+	int (*f)(va_list ap, flags_t *f);
+} ph;
+
 int _printf(const char *format, ...);
 char* convert(unsigned int, int);
 #endif
